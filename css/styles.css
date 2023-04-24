@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --color-purple-10: #7c3aed;
+    --color-purple-20: #a855f7;
+    --color-purple-30: #a346ef;
+    --color-light-10: #f8fafc;
+    --color-light-20: #797984;
+    --color-gradient: linear-gradient(90deg, var(--color-purple-10), var(--color-purple-20), var(--color-purple-30))
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: var(--color-gradient);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-neutral-20);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.box_container {
+    background-color: var(--color-light-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.335);
+    padding-top: 3rem;
+    width: 30rem;
+
+
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+}
+
+.input_box {
+    color: var(--color-light-20);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.input_box input {
+    padding: 12px 60px;
+    border: none;
+    border-radius: 20px;
+    width: 23rem;
+    height: 3.4rem;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.335);
+}
+
+.input_box input:focus {
+    outline: none;
+}
+
+#email {
+    background-image: url("/css/image/envelope-regular.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.335);
+}
+
+#password {
+    background-image: url("/css/image/password.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.335);
+
+}
+
+.input_box .remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover{
+    color: rgb(1, 1, 243);
+}
+
+.fa-regular {
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--color-purple-20);
+}
+
+.check_box {
+    display: flex;
+    margin-left: 13px;
+    font-size: 13px;
+    padding-top: 3px;
+}
+.check_box i{
+    cursor: pointer;
+}
+
+.remember a {
+    font-size: 13px;
+}
+
+button {
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background: var(--color-gradient);
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-purple-10);
+
+}
+
+.footer_class {
+    padding-bottom: 30px;
+    color: var(--color-light-20);
+    font-size: 14px;
+}
